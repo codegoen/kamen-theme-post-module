@@ -8,7 +8,7 @@
         class="lg:col-span-2 lg:row-end-1 row-end-7 col-span-12 lg:mt-0 mt-6"
       >
         <slot name="leftbar">
-          <!-- <PageLeftbar /> -->
+          <kamen-leftbar />
         </slot>
       </div>
 
@@ -22,7 +22,7 @@
       <!-- right bar -->
       <div class="lg:col-span-3 col-span-12 lg:mt-0 mt-6">
         <slot name="rightbar">
-          <!-- <PageRightbar /> -->
+          <kamen-rightbar />
         </slot>
       </div>
     </div>

@@ -4,9 +4,10 @@
       <div class="flex items-center justify-between flex-wrap">
         <div class="w-0 flex-1 flex items-center">
           <span class="flex p-2 rounded-lg bg-pink-800">
-            <IconHeroicons-outline:speakerphone
-              class="h-6 w-6 text-white"
-              aria-hidden="true"
+            <v-icon
+              name="SpeakerphoneIcon"
+              type="outline"
+              class="w-6 h-6 text-white"
             />
           </span>
           <p class="ml-3 font-medium text-white truncate">
@@ -55,10 +56,7 @@
             "
           >
             <span class="sr-only">Dismiss</span>
-            <IconHeroicons-outline:x
-              class="h-6 w-6 text-white"
-              aria-hidden="true"
-            />
+            <v-icon name="XIcon" type="solid" class="w-6 h-6 text-white" />
           </button>
         </div>
       </div>

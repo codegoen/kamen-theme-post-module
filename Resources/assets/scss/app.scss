@@ -1,0 +1,43 @@
+@layer components {
+    .card-zoom {
+        @apply relative flex items-center justify-center overflow-hidden shadow-xl rounded-2xl;
+    }
+    .card-zoom-image {
+        @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
+    }
+    .card-zoom-text {
+        @apply absolute text-5xl font-black transition-all duration-500 ease-in-out transform scale-150 text-gray-50 opacity-60;
+    }
+
+    .card-zoom:hover .card-zoom-image {
+        @apply scale-150;
+    }
+    .card-zoom:hover .card-zoom-text {
+        @apply scale-100;
+    }
+}
+
+/* nuxt page transactions */
+.page-enter-active {
+    transition: all 0.1s ease-out;
+}
+.page-leave-active {
+    transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.page-enter-from,
+.page-leave-to {
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.layout-enter-active {
+    transition: all 0.1s ease-out;
+}
+.layout-leave-active {
+    transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.layout-enter-from,
+.layout-leave-to {
+    transform: translateY(-20px);
+    opacity: 0;
+}

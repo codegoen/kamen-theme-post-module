@@ -25,7 +25,7 @@
         </div>
         <div class="md:col-span-4 col-span-12 place-self-center">
           <ul class="flex flex-row space-x-8">
-            <li>
+            <!-- <li>
               <a href="https://facebook.com/rixzkl" target="blank">
                 <IconMdi:facebook-box class="text-[3em]" />
               </a>
@@ -39,7 +39,7 @@
               <a href="https://github.com/rizkhal" target="blank">
                 <IconMdi:github-box class="text-[3em]" />
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
