@@ -1,0 +1,13 @@
+{
+    "name": "KamenTheme",
+    "alias": "kamentheme",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\KamenTheme\\Providers\\KamenThemeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
