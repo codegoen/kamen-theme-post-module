@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <v-app-link
-      :href="$route('dashboard')"
+      :href="$route('dashboard.dashboard')"
       class="
         bg-pink-500/80
         text-white

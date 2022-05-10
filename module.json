@@ -9,5 +9,8 @@
     ],
     "aliases": {},
     "files": [],
-    "requires": []
+    "requires": [],
+    "setting": {
+        "route": "dashboard.kamen-theme.setting.index"
+      }
 }
