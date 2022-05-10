@@ -7,7 +7,7 @@ use Illuminate\Routing\Controller;
 
 class KamenThemeController extends Controller
 {
-    public function index()
+    public function post()
     {
         return Inertia::render('KamenTheme::index');
     }

@@ -2,19 +2,21 @@
   <div
     class="
       grid
-      lg:grid-cols-12
-      grid-cols-2
-      gap-4
       py-4
-      bg-white
-      items-center
+      px-2
+      gap-4
       shadow
       lg:px-8
-      px-2
+      bg-white
+      grid-cols-2
+      items-center
+      lg:grid-cols-12
     "
   >
     <div class="lg:col-span-2">
-      <v-app-link href="/" class="text-2xl font-bold">KAMEN</v-app-link>
+      <v-app-link :href="$route('post.home')" class="text-2xl font-bold"
+        >KAMEN</v-app-link
+      >
     </div>
     <div class="lg:hidden inline ml-auto">
       <button
@@ -22,9 +24,9 @@
           p-2
           rounded-md
           focus:ring-2
+          focus:outline-none
           focus:ring-offset-2
           focus:ring-pink-500
-          focus:outline-none
         "
         @click.prevent="state.toggle"
       >
@@ -46,52 +48,7 @@
     </div>
     <div class="col-span-7 mr-auto lg:inline-block hidden">
       <ul class="flex flex-row justify-center w-full space-x-20">
-        <li>
-          <v-app-link
-            href="/kamentheme"
-            class="flex flex-row items-center font-semibold"
-          >
-            <v-icon
-              name="HomeIcon"
-              type="outline"
-              class="w-6 h-6 mr-2 font-semibold"
-            />
-            Home
-          </v-app-link>
-        </li>
-        <li>
-          <v-app-link
-            href="/kamentheme/video"
-            class="flex flex-row items-center font-semibold"
-          >
-            <v-icon
-              name="FilmIcon"
-              type="outline"
-              class="w-6 h-6 mr-2 font-semibold"
-            />
-            Video
-          </v-app-link>
-        </li>
-        <li>
-          <v-app-link href="#" class="flex flex-row items-center font-semibold">
-            <v-icon
-              name="PresentationChartBarIcon"
-              type="outline"
-              class="w-6 h-6 mr-2 font-semibold"
-            />
-            Pools
-          </v-app-link>
-        </li>
-        <li>
-          <v-app-link href="#" class="flex flex-row items-center font-semibold">
-            <v-icon
-              name="BookOpenIcon"
-              type="outline"
-              class="w-6 h-6 mr-2 font-semibold"
-            />
-            Magazine
-          </v-app-link>
-        </li>
+        <kamen-page-menu />
       </ul>
     </div>
     <div class="lg:col-span-3 md:col-span-6 lg:inline-block hidden ml-auto">
@@ -108,50 +65,9 @@
       <kamen-search-button class="w-full" @click.prevent="search.toggle" />
     </div>
 
-    <v-app-link
-      href="#"
-      class="flex flex-row items-center font-semibold hover:bg-gray-200 p-4"
-    >
-      <v-icon
-        name="HomeIcon"
-        type="outline"
-        class="w-6 h-6 mr-2 font-semibold"
-      />
-      Home
-    </v-app-link>
-    <v-app-link
-      href="#"
-      class="flex flex-row items-center font-semibold hover:bg-gray-200 p-4"
-    >
-      <v-icon
-        name="FilmIcon"
-        type="outline"
-        class="w-6 h-6 mr-2 font-semibold"
-      />
-      Video
-    </v-app-link>
-    <v-app-link
-      href="#"
-      class="flex flex-row items-center font-semibold hover:bg-gray-200 p-4"
-    >
-      <v-icon
-        name="PresentationChartBarIcon"
-        type="outline"
-        class="w-6 h-6 mr-2 font-semibold"
-      />
-      Pools
-    </v-app-link>
-    <v-app-link
-      href="#"
-      class="flex flex-row items-center font-semibold hover:bg-gray-200 p-4"
-    >
-      <v-icon
-        name="BookOpenIcon"
-        type="outline"
-        class="w-6 h-6 mr-2 font-semibold"
-      />
-      Magazine
-    </v-app-link>
+    <ul class="flex flex-col divide-y divide-gray-200">
+      <kamen-page-menu />
+    </ul>
   </div>
 </template>
 <script setup>

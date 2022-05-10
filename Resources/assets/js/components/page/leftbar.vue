@@ -4,7 +4,7 @@
 
     <ul class="flex flex-col bg-white rounded-2xl shadow">
       <li
-        v-for="(item, index) in Array.from({ length: 5 })"
+        v-for="(category, index) in $page.props.categories"
         :key="index"
         class="p-3 border-b"
       >
@@ -18,10 +18,10 @@
               transition-all
             "
           >
-            Politics
+            {{ category.name }}
           </a>
           <span class="bg-pink-500 text-pink-200 px-2 py-1 rounded-md">
-            {{ ++index }}
+            {{ category.posts_count }}
           </span>
         </div>
       </li>

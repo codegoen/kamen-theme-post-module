@@ -69,5 +69,17 @@ export default {
       "kamen-side-card",
       require("./components/card/side.vue").default,
     );
+
+    // button
+    app.component(
+      "kamen-button-dashboard",
+      require("./components/button/dashboard.vue").default,
+    );
+
+    // menu
+    app.component(
+      "kamen-page-menu",
+      require("./components/page/menu.vue").default
+    )
   },
 };
