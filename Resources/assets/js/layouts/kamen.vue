@@ -6,7 +6,11 @@
     <kamen-header />
 
     <!-- slot -->
-    <slot />
+    <transition name="layout">
+      <div :key="$page.url">
+        <slot />
+      </div>
+    </transition>
 
     <!-- search modal -->
     <kamen-search-modal />
